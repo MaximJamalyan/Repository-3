@@ -14,5 +14,9 @@ public class Cache<T> {
     }
     list.addLast(item);
 }
+    public boolean remove(T item) {
+    	return list.remove(item);
+}
+
 
 }
