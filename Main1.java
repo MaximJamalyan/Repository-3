@@ -1,17 +1,17 @@
-public class Main {
+public class Main1 {
     public static void main(String[] args) {
         Cache<String> cache = new Cache<>(3);
 
         cache.add("A");
         cache.add("B");
         cache.add("C");
-        System.out.println(cache.exists("B")); // true
+        System.out.println(cache.exists("B"));
 
-        cache.add("D"); // Удаляет A
-        System.out.println(cache.getFirst()); // B
-        System.out.println(cache.getLast());  // D
+        cache.add("D");
+        System.out.println(cache.getFirst());
+        System.out.println(cache.getLast());
 
         cache.remove("C");
-        System.out.println(cache.getItemByIndex(0)); // B
+        System.out.println(cache.getItemByIndex(0));
     }
 }
