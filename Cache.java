@@ -26,6 +26,9 @@ public T getFirst() {
 public T getLast() {
     return list.isEmpty() ? null : list.getLast();
 }
+public T getItemByIndex(int i) {
+    return (i >= 0 && i < list.size()) ? list.get(i) : null;
+}
 
 
 }
